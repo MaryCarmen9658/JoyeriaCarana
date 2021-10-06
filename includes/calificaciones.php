@@ -7,6 +7,7 @@ class User extends DB{
 	private $calificacion1;
 	private $calificacion2;
 	private $calificacion3;
+	private $calificacion4;
     public function userExists($user, $pass){
 		$sha1pass = sha1($pass);
         $query = $this->connect()->prepare('SELECT * FROM personas WHERE username = :user AND password = :pass');
